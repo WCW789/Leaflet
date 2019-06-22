@@ -83,16 +83,7 @@ d3.json(queryUrl, function (response) {
             // fillColor: none,
             fillOpacity: 0
           })
-      } else if (plate.geometry.types = "MultiPolygon") {
-        plateShape = L.MultiPolygon([
-          plate.geometry.coordinates[0], plate.geometry.coordinates[2]], {
-            color: "blue",
-            // fillColor: none,
-            fillOpacity: 0
-          })
       }
-
-      console.log("what up")
       tecPlates.push(plateShape);
     }
     tecPlatez = L.layerGroup(tecPlates); ///
